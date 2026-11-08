@@ -1,0 +1,620 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Infinite Getaways</title>
+    <!-- CSS file link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caveat:wght@400..700&family=Changa+One:ital@0;1&family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Kaushan+Script&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Caveat:wght@400..700&family=Changa+One:ital@0;1&family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Exo+2:ital,wght@0,100..900;1,100..900&family=Italianno&family=Kaushan+Script&family=Libre+Baskerville:ital,wght@0,400..700;1,400..700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!--Font Awesome CDN  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <div class="header-container-2 container-fluid px-0 bg-transparent">
+      <!-- navbar -->
+      <nav id="mainNavbar" class="navbar navbar-expand-lg position-fixed">
+        <div class="container-fluid">
+          <a class="navbar-brand m-3 ms-4 me-5 fs-3" href="./index.html"
+            >Infinite Getaways</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./rooms.html"
+                  >Rooms</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./activities.html"
+                  >Adventures</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./about.html"
+                  >About</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="./contact.html"
+                  >Contact</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <button
+                class="me-3 text-light fw-bold book-stay-button"
+                type="submit"
+              >
+                <a
+                  href="./contact.html#registration-form"
+                  class="text-decoration-none text-light"
+                  >Book Now</a
+                >
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- adventure cards -->
+    <section>
+      <div
+        class="container d-flex justify-content-around align-items-center flex-wrap align-items-center mt-5 mb-5"
+      >
+        <h1>— Beyond the Ordinary, Into the Extraordinary —</h1>
+        <p class="w-50 text-center">
+          From exhilarating outdoor adventures to serene nature escapes,
+          discover experiences that awaken your spirit, ignite your curiosity
+          and turn every moment into a lasting memory.
+        </p>
+      </div>
+      <div
+        class="container d-flex flex-row flex-wrap gap-5 mb-5 justify-content-center"
+      >
+        <div class="card" style="width: 25rem">
+          <img
+            src="https://images.pexels.com/photos/1615766/pexels-photo-1615766.jpeg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5
+              class="card-title"
+              style="font-family: &quot;Cinzel Decorative&quot;, serif"
+            >
+              Backwater Rafting
+            </h5>
+            <p class="card-text">
+              IMR Green Resort & Spa, Kerala invites you to embark on a culinary
+              journey with the Chef's Choice Menu—select two delectable
+              appetizers paired with a fine bottle of wine.
+            </p>
+            <a
+              href="#"
+              class="book-stay-button text-light"
+              style="text-decoration: none"
+              >JOIN</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 25rem">
+          <img
+            src="https://images.pexels.com/photos/34050614/pexels-photo-34050614.jpeg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5
+              class="card-title"
+              style="font-family: &quot;Cinzel Decorative&quot;, serif"
+            >
+              Wildlife Safari
+            </h5>
+            <p class="card-text">
+              Get closer to nature through unforgettable wildlife encounters and
+              guided safari expeditions.
+            </p>
+            <a
+              href="#"
+              class="book-stay-button text-light"
+              style="text-decoration: none"
+              >JOIN</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 25rem">
+          <img
+            src="https://images.pexels.com/photos/37911658/pexels-photo-37911658.jpeg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5
+              class="card-title"
+              style="font-family: &quot;Cinzel Decorative&quot;, serif"
+            >
+              Mountain Trekking
+            </h5>
+            <p class="card-text">
+              Explore scenic trails, breathtaking mountain landscapes and hidden
+              natural wonders with guided trekking experiences.
+            </p>
+            <a
+              href="#"
+              class="book-stay-button text-light"
+              style="text-decoration: none"
+              >JOIN</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 25rem">
+          <img
+            src="https://images.pexels.com/photos/36184378/pexels-photo-36184378.jpeg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5
+              class="card-title"
+              style="font-family: &quot;Cinzel Decorative&quot;, serif"
+            >
+              Cultural Experiences
+            </h5>
+            <p class="card-text">
+              Immerse yourself in local heritage through traditional
+              performances, authentic cuisine, art and cultural explorations.
+            </p>
+            <a
+              href="#"
+              class="book-stay-button text-light"
+              style="text-decoration: none"
+              >JOIN</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 25rem">
+          <img
+            src="https://images.pexels.com/photos/28774411/pexels-photo-28774411.jpeg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5
+              class="card-title"
+              style="font-family: &quot;Cinzel Decorative&quot;, serif"
+            >
+              Sunset Cruises
+            </h5>
+            <p class="card-text">
+              Experience magical sunsets, gentle ocean breezes and mesmerising
+              coastal views aboard an exclusive cruise.
+            </p>
+            <a
+              href="#"
+              class="book-stay-button text-light"
+              style="text-decoration: none"
+              >JOIN</a
+            >
+          </div>
+        </div>
+        <div class="card" style="width: 25rem">
+          <img
+            src="https://images.pexels.com/photos/11661635/pexels-photo-11661635.jpeg"
+            class="card-img-top"
+            alt="..."
+          />
+          <div class="card-body">
+            <h5
+              class="card-title"
+              style="font-family: &quot;Cinzel Decorative&quot;, serif"
+            >
+              Hot Air Ballooning
+            </h5>
+            <p class="card-text">
+              Soar above breathtaking landscapes and take in spectacular
+              panoramic views with an unforgettable hot air balloon adventure.
+            </p>
+            <a
+              href="#"
+              class="book-stay-button text-light"
+              style="text-decoration: none"
+              >JOIN</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- final section -->
+    <section
+      style="
+        background: url(https://images.pexels.com/photos/9977759/pexels-photo-9977759.jpeg);
+        color: white;
+      "
+    >
+      <div class="container pt-5 mb-5 d-flex justify-content-around flex-wrap">
+        <h1>— Your Next Adventure Begins Here —</h1>
+        <p class="w-50 text-center">
+          The world is full of extraordinary experiences waiting to be
+          discovered. Whether you seek thrilling adventures, peaceful escapes or
+          unforgettable encounters, your next great story begins with Infinite
+          Getaways.
+        </p>
+      </div>
+      <div
+        id="carouselExampleAutoplaying"
+        class="carousel slide mb-5 pb-5"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="card-wrapper">
+              <div class="card border-0" style="width: 60%">
+                <img
+                  src="https://images.pexels.com/photos/1142948/pexels-photo-1142948.jpeg"
+                  class="card-img-top carousel-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h3
+                    class="card-title text-center"
+                    style="font-family: &quot;Cinzel Decorative&quot;, serif"
+                  >
+                    Embrace the Unknown
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card-wrapper">
+              <div class="card border-0" style="width: 60%">
+                <img
+                  src="https://images.pexels.com/photos/9909208/pexels-photo-9909208.jpeg"
+                  class="card-img-top carousel-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h3
+                    class="card-title text-center"
+                    style="font-family: &quot;Cinzel Decorative&quot;, serif"
+                  >
+                    Make Every Moment Count
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="card-wrapper">
+              <div class="card border-0" style="width: 60%">
+                <img
+                  src="https://images.pexels.com/photos/14887744/pexels-photo-14887744.jpeg"
+                  class="card-img-top carousel-card-img"
+                  alt="..."
+                />
+                <div class="card-body">
+                  <h3
+                    class="card-title text-center"
+                    style="font-family: &quot;Cinzel Decorative&quot;, serif"
+                  >
+                    Let Your Journey Begin
+                  </h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleAutoplaying"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- footer -->
+    <div class="footer-container container-fluid px-0 bg-dark text-light">
+      <div class="row gap-5 gap-md-4">
+        <div
+          class="col-lg-3 col-md-6 col-sm-12 p-5 me-5"
+          style="width: fit-content"
+        >
+          <h1>IMR</h1>
+          <p>Subscribe for latest updates</p>
+          <form action="" class="mb-4 d-flex gap-1">
+            <input
+              class="form-control bg-dark text-light"
+              type="text"
+              name=""
+              id=""
+              placeholder="Enter your email address"
+            />
+            <button class="btn btn-light">subscribe</button>
+          </form>
+          <h6>FOR BOOKING CONTACT</h6>
+          <p>+91 77366 10331</p>
+          <p>1-800-111-825</p>
+          <h6>CUSTOMER SUPPORT</h6>
+          <p>contactinfget@gmail.com</p>
+        </div>
+        <div
+          class="col-lg-3 col-md-6 col-sm-12 p-5 mt-5 d-flex flex-column gap-2"
+        >
+          <h6>QUICK LINKS</h6>
+          <a
+            class="text-decoration-none text-light"
+            href="./contact.html#registration-form"
+            >Hotels</a
+          >
+          <a
+            class="text-decoration-none text-light"
+            href="./contact.html#registration-form"
+            >Dining</a
+          >
+          <a
+            class="text-decoration-none text-light"
+            href="./contact.html#registration-form"
+            >Wellness</a
+          >
+          <a
+            class="text-decoration-none text-light"
+            href="./contact.html#registration-form"
+            >Timeless Weddings</a
+          >
+          <a
+            class="text-decoration-none text-light"
+            href="./contact.html#registration-form"
+            >Event Venues</a
+          >
+          <a
+            class="text-decoration-none text-light"
+            href="./contact.html#registration-form"
+            >InfGet Magazines</a
+          >
+          <a
+            class="text-decoration-none text-light"
+            href="https://maps.app.goo.gl/34QfxYmYriwWuDNf8"
+            target="_blank"
+            >Sitemap</a
+          >
+          <a
+            class="text-decoration-none text-light"
+            href="./contact.html#registration-form"
+            >HSBC InfGet Credit Card</a
+          >
+        </div>
+        <div
+          class="col-lg-3 col-md-6 col-sm-12 p-5 d-flex flex-column gap-2"
+          style="margin-top: 80px"
+        >
+          <a class="text-decoration-none text-light" href="./about.html"
+            >About InfGet</a
+          >
+          <a
+            class="text-decoration-none text-light"
+            href="./contact.html#registration-form"
+            >Holidays</a
+          >
+          <a
+            class="text-decoration-none text-light"
+            href="./contact.html#registration-form"
+            >Offers</a
+          >
+          <a
+            class="text-decoration-none text-light"
+            href="./contact.html#registration-form"
+            >Gifting</a
+          >
+          <a
+            class="text-decoration-none text-light"
+            href="./contact.html#registration-form"
+            >Epicure</a
+          >
+          <a
+            class="text-decoration-none text-light"
+            href="./contact.html#registration-form"
+            >InfGet Blog</a
+          >
+          <a
+            class="text-decoration-none text-light"
+            href="./contact.html#registration-form"
+            >Partnerships</a
+          >
+          <a
+            class="text-decoration-none text-light"
+            href="./contact.html#registration-form"
+            >InfGet InnerCircle</a
+          >
+        </div>
+        <div
+          class="col-lg-3 col-md-6 col-sm-12 pt-5 ms-5 mb-4"
+          style="width: fit-content; height: fit-content; margin-top: 40px"
+        >
+          <h6>CONNECT WITH US</h6>
+          <a href="https://web.whatsapp.com/" target="_blank"
+            ><i style="color: white" class="fa-brands fa-whatsapp"></i
+          ></a>
+          <a
+            target="_blank"
+            href="https://www.instagram.com/accounts/login/?hl=en"
+            ><i style="color: white" class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://www.facebook.com/" target="_blank"
+            ><i style="color: white" class="fa-brands fa-facebook"></i
+          ></a>
+          <a href="https://x.com/?lang=en" target="_blank"
+            ><i style="color: white" class="fa-brands fa-x-twitter"></i
+          ></a>
+        </div>
+      </div>
+      <div class="row">
+        <hr />
+        <p class="d-inline-flex gap-1">
+          <a
+            class="btn btn-outline-light w-100 m-3"
+            data-bs-toggle="collapse"
+            href="#collapseExample"
+            role="button"
+            aria-expanded="false"
+            aria-controls="collapseExample"
+          >
+            Locations
+          </a>
+        </p>
+        <div class="collapse" id="collapseExample">
+          <div
+            class="card card-body d-flex flex-row justify-content-around bg-dark"
+          >
+            <div class="loc-div1">
+              <ul>
+                <li>5-Star Hotel in Agra</li>
+                <li>5-Star Hotel in Mumbai</li>
+                <li>5-Star Hotel in Kochi</li>
+              </ul>
+            </div>
+            <div class="loc-div2">
+              <ul>
+                <li>5-Star Hotel in Chennai</li>
+                <li>5-Star Hotel in Lucknow</li>
+                <li>5-Star Hotel in Gurgaon</li>
+              </ul>
+            </div>
+            <div class="loc-div3">
+              <ul>
+                <li>5-Star Hotel in Bangalore</li>
+                <li>5-Star Hotel in Hyderabad</li>
+                <li>5-Star Hotel in Haryana</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <hr />
+      </div>
+      <hr />
+      <h3 class="fw-bold ms-5 mb-3 mt-5">OUR BRANDS</h3>
+      <div class="row p-5">
+        <div class="col d-flex justify-content-around flex-wrap gap-4">
+          <h6 class="fw-bold" style="font-family: &quot;Caveat&quot;, cursive">
+            Solara Cove
+          </h6>
+          <h6
+            class="fw-bold"
+            style="font-family: &quot;Libre Baskerville&quot;, serif"
+          >
+            Aurelia Palace
+          </h6>
+          <h6
+            class="fw-bold"
+            style="font-family: &quot;Exo 2&quot;, sans-serif"
+          >
+            Wildfern Retreat
+          </h6>
+          <h6
+            class="fw-bold"
+            style="font-family: &quot;Merriweather&quot;, serif"
+          >
+            Azure Dunes
+          </h6>
+          <h6
+            class="fw-bold"
+            style="font-family: &quot;Cormorant Garamond&quot;, serif"
+          >
+            Monsoon House
+          </h6>
+          <h6
+            class="fw-bold"
+            style="font-family: &quot;Cinzel Decorative&quot;, serif"
+          >
+            Celestia Bay
+          </h6>
+        </div>
+      </div>
+      <hr />
+      <div class="row ps-5 pe-5 pt-4 pb-4">
+        <div class="col-lg-6 col-md-12 col-sm-12">
+          <p>©2026 IMR Hotels Company limited. All Rights Reserved</p>
+        </div>
+        <div
+          class="col-lg-6 col-md-12 col-sm-12 d-flex flex-wrap gap-4 justify-content-around"
+        >
+          <p>Corporate</p>
+          <p>Pressroom</p>
+          <p>Work with us</p>
+          <p>Terms Of Service</p>
+          <p>Best Rate Guarantee FAQ</p>
+          <p>Accesibility</p>
+          <p>Investor Relations</p>
+          <p>Partners</p>
+          <p>Privacy Policy</p>
+          <p>Cookies Policy</p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</html>

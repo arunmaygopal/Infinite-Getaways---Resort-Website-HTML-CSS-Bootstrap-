@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.navbar {
+    z-index: 9999;
+}
+
+.header-container{
+    height: 100vh;
+    /* padding: 0px 0px; */
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.pexels.com/photos/261101/pexels-photo-261101.jpeg");
+    background-size: cover;
+}
+
+.header-container-1{
+    height: 100vh;
+    /* padding: 0px 0px; */
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.pexels.com/photos/14022369/pexels-photo-14022369.jpeg");
+    background-size: cover;
+}
+
+.header-container-2{
+    height: 100vh;
+    /* padding: 0px 0px; */
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.pexels.com/photos/17928231/pexels-photo-17928231.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.header-container-3{
+    height: 100vh;
+    /* padding: 0px 0px; */
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.pexels.com/photos/7748791/pexels-photo-7748791.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.header-container-4{
+    height: 100vh;
+    /* padding: 0px 0px; */
+    background-image:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.pexels.com/photos/39592033/pexels-photo-39592033.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+
+.book-stay-button{
+    background-color: goldenrod;
+    border-radius: 6px;
+    padding: 7px 10px;
+    border: none;
+}
+
+/* navbar scrolling animation */
+
+#mainNavbar {
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+
+    background-color: transparent;
+
+    animation: navbarBackground linear both;
+    animation-timeline: scroll();
+    animation-range: 0px 150px;
+}
+
+@keyframes navbarBackground {
+    from {
+        background-color: transparent;
+    }
+
+    to {
+        background-color: white;
+    }
+}
+
+/* Navbar text */
+#mainNavbar .navbar-brand,
+#mainNavbar .nav-link {
+    color: white;
+    animation: navbarText linear both;
+    animation-timeline: scroll();
+    animation-range: 0px 150px;
+}
+
+@keyframes navbarText {
+    from {
+        color: white;
+    }
+
+    to {
+        color: black;
+    }
+}
+
+/* Dropdown */
+#mainNavbar .dropdown-menu {
+    background-color: white;
+}
+
+#mainNavbar .dropdown-item {
+    color: black !important;
+}
+
+.navbar-toggler {
+    border-color: white;
+}
+
+.navbar-toggler-icon {
+    filter: brightness(0) invert(1);
+}
+
+.navbar-brand, h1,h2,h3{
+    font-family: "Cinzel Decorative", serif;
+    color: white;
+}
+
+.nav-link, btn{
+    font-family: "Merriweather", serif;
+}
+
+/* footer */
+
+.footer-container{
+    height: fit-content;
+}
+
+.img-cont-1{
+    background: url(https://images.pexels.com/photos/14024957/pexels-photo-14024957.jpeg);
+    background-size: cover;
+}
+
+.card-img-top{
+    height: 300px;
+}
+
+.carousel-img{
+    width: 500px;
+    height: 1000px;
+    object-fit: fill;
+}
+
+/* Centre the card */
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Card dimensions */
+.card {
+    width: 40%;
+}
+
+
+.carousel-card-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+}
+
+/* rooms.html */
+
+.img-cont-2{
+    background: url(https://images.pexels.com/photos/13283215/pexels-photo-13283215.jpeg);
+    background-size: cover;
+}
+
+.img-cont-3{
+    background: url(https://images.pexels.com/photos/5537579/pexels-photo-5537579.jpeg);
+    background-size: cover;
+}
+
+.img-cont-4{
+    background: url(https://images.pexels.com/photos/34588372/pexels-photo-34588372.jpeg);
+    background-size: cover;
+}
+
+.img-cont-5{
+    background: url(https://images.pexels.com/photos/1065753/pexels-photo-1065753.jpeg);
+    background-size: cover;
+}
+
+.img-cont-6{
+    background: url(https://images.pexels.com/photos/6190475/pexels-photo-6190475.jpeg);
+    background-size: cover;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+    .carousel-img{
+        height: 400px;
+    }
+    .carousel-card-img{
+        min-height: 400px;
+    }
+    .card{
+        height: 400px;
+    }
+    .card {
+        width: 70%;
+    }
+    .img-cont-1 {
+        min-height: 400px;
+    }
+    .img-cont-2 {
+        min-height: 400px;
+    }
+    .img-cont-3 {
+        min-height: 400px;
+    }
+    .img-cont-4 {
+        min-height: 400px;
+    }
+    .img-cont-5 {
+        min-height: 400px;
+    }
+    .img-cont-6 {
+        min-height: 400px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+    .carousel-card-img{
+        min-height: 200px;
+    }
+    .card {
+        width: 85%;
+    }
+    .img-cont-1 {
+        min-height: 400px;
+    }
+    .img-cont-2 {
+        min-height: 400px;
+    }
+    .img-cont-3 {
+        min-height: 400px;
+    }
+    .img-cont-4 {
+        min-height: 400px;
+    }
+    .img-cont-5 {
+        min-height: 400px;
+    }
+    .img-cont-6 {
+        min-height: 400px;
+    }
+}
+
+
+
